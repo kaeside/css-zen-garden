@@ -1,0 +1,34 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+body {
+	box-sizing: border-box;
+	width: 80%;
+	height: 100%;
+	border: 2px solid orange;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+.participation, .requirements {
+	float: right;
+}
+.design-selection {
+	float: left;
+}
+
+.column-2,
+.column-3 {
+	width: 30%;
+	float: left;
+}
+
+.column-1 {
+	float: left;
+	width: 40%;
+}
