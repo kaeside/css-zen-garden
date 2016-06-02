@@ -1,41 +1,114 @@
 /* css Zen Garden default style v1.02 */
+
+
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
+
 /* This file based on 'Tranquille' by Dave Shea */
+
+
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+
+
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
+
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/*
 
+TITLE FONT
+font-family: 'Philosopher', sans-serif;
+
+BODY FONT
+font-family: 'Muli', sans-serif;
+
+*/
+body{
+	background-image: url('https://images.unsplash.com/photo-1431955277195-0f22b560a8e9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c4bfbf013781d4273dce368b6346033d');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 .container {
-	/*display: flex;*/
+    font-family: 'Muli', sans-serif;
+	margin: 0 2em;
 }
-
 .intro {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-header, .summary {
-	width: 67%;
+header {
+	text-align: center;
 }
 
+header h1, h2 {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+header, .summary{
+    width: 67%;
+}
 .summary {
-	/*flex-direction: column;*/
-	text-align: left;
-
+    text-align: center;
+	font-family: 'Muli', sans-serif;
 }
-
 .explanation, .preamble {
-	/*display: flex;*/
-	/*flex: 2;*/
-	width: 33%;
-	/*align-items: flex-end;*/
+    /*display: flex;*/
+    /*flex: 2;*/
+    /*width: 33%;*/
+    /*align-items: flex-end;*/
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+.container h3 {
+	font-family: 'Philosopher', sans-serif;
+}
+.sidebar {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 0 33.333%;
+    order: -1;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: .5em;
+}
+.design-selection, .design-archives, .zen-resources {
+    flex: 1;
+    flex-direction: column;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.explanation, .preamble, .participation, .requirements, .benefits {
+    flex: 0 0 50%;
+	box-sizing: border-box;
+	padding: 0 .5em;
+	border: 1em solid rgba(0,0,0,0);
 }
 
-.sidebar {
-	display: flex;
-	align-items: flex-start;
-	flex: 1;
+.design-selection ul{
+    list-style-type: none;
+}
+
+.design-archives ul{
+   list-style-type: none;
+}
+
+.zen-resources ul{
+   list-style-type: none;
+}
+
+footer {
+	background-color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	font-family: 'Muli', sans-serif;
 }
