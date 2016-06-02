@@ -7,28 +7,35 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-body {
-	box-sizing: border-box;
-	width: 80%;
-	height: 100%;
-	border: 2px solid orange;
-	margin: 0 auto;
-	margin-top: 2em;
-}
-.participation, .requirements {
-	float: right;
-}
-.design-selection {
-	float: left;
+.container {
+	/*display: flex;*/
 }
 
-.column-2,
-.column-3 {
-	width: 30%;
-	float: left;
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
-.column-1 {
-	float: left;
-	width: 40%;
+header, .summary {
+	width: 67%;
+}
+
+.summary {
+	/*flex-direction: column;*/
+	text-align: left;
+
+}
+
+.explanation, .preamble {
+	/*display: flex;*/
+	/*flex: 2;*/
+	width: 33%;
+	/*align-items: flex-end;*/
+}
+
+.sidebar {
+	display: flex;
+	align-items: flex-start;
+	flex: 1;
 }
